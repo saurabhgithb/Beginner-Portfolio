@@ -1,0 +1,55 @@
+/*-------------------------*/
+/*Reset                    */
+/*-------------------------*/
+
+/*Box sizing*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+picture{
+    margin: 0;
+}
+
+/* body */
+body{
+    line-height: 1.5; /* default is smth 1.4 or 1.2 */
+    min-height: 100vh;
+}
+
+/* Images */
+img,
+picture {
+    max-height: 100%;
+    display: block;
+}
+
+/* Form Elements */
+select,
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
